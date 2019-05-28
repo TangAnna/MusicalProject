@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.tang.musical.baseui.widget.TitleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Sign In" />
+
+        <ImageView
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y52"
+            android:src="@drawable/path" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y24"
+            android:text="Musical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x46" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginTop="@dimen/y28"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x38" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x100"
+            android:background="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginTop="@dimen/y28"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x38" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginLeft="@dimen/x100"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x60"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_icon_bg" />
+
+            <TextView
+                android:layout_width="@dimen/x346"
+                android:layout_height="@dimen/y90"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/shape_007"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x32" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_icon_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y48"
+            android:text="Forgot your password?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x32" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y48"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/y100"
+        android:text="Already have an account?"
+        android:textColor="@color/colorff9"
+        android:textSize="@dimen/x32" />
+
+</RelativeLayout>

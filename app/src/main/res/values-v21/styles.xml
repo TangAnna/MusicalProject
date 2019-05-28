@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color333</item>
+        <item name="android:windowBackground">@color/colorBg</item>
+        <item name="android:textColorHint">@color/color999</item>
+        <!--底部控制器的背景颜色-->
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
+
+</resources>
