@@ -27,7 +27,7 @@
     <!--页面背景颜色-->
     <color name="colorBg">#151618</color>
     <!--分割线的颜色-->
-    <color name="colorDividingLine">#DDDDDD</color>
+    <color name="colorDividingLine">#3b3b3e</color>
 
     <!--首页三个tab文字色值-->
     <color name="colorTabNormal">#999999</color>
@@ -42,5 +42,6 @@
     <color name="color80">#808080</color>
     <color name="colorf46">#F46119</color>
     <color name="color007">#0076FF</color>
+    <color name="color8f8">#8f8e94</color>
 
 </resources>

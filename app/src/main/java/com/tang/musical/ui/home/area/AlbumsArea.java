@@ -18,32 +18,35 @@ import java.util.List;
 
 /**
  * @author TangAnna
- * @description: 首页的每一个横着的item
+ * @description: 首页的New Albums模块
  * @date :${DATA} 11:11
  */
-public class HomeItemArea extends BaseRelativeLayout {
+public class AlbumsArea extends BaseRelativeLayout<List<MusicalModel>> {
     private RecyclerView mRecyclerView;
     private List<MusicalModel> mData;
+    private CommonAdapter mAdapter;
 
-    public HomeItemArea(Context context) {
+    public AlbumsArea(Context context) {
         super(context);
     }
 
-    public HomeItemArea(Context context, AttributeSet attrs) {
+    public AlbumsArea(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public HomeItemArea(Context context, AttributeSet attrs, int defStyleAttr) {
+    public AlbumsArea(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     @Override
     protected void initView(Context context, AttributeSet attrs, int defStyleAttr) {
+        ((HomeItemTitle) findViewById(R.id.title_area)).setData("New Albums");
+        findViewById(R.id.view_line).setVisibility(VISIBLE);
         mRecyclerView = findViewById(R.id.rv_body);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         mData = new ArrayList<>();
-        mRecyclerView.setAdapter(new CommonAdapter<MusicalModel>(getContext(), R.layout.item_home_area, mData) {
+        mRecyclerView.setAdapter(mAdapter = new CommonAdapter<MusicalModel>(getContext(), R.layout.item_albums, mData) {
             @Override
             protected void convert(ViewHolder holder, MusicalModel musicalModel, int position) {
 
@@ -54,8 +57,10 @@ public class HomeItemArea extends BaseRelativeLayout {
     }
 
     @Override
-    public void setData(Object data) {
-
+    public void setData(List<MusicalModel> data) {
+        mData.clear();
+        mData.addAll(data);
+        mAdapter.notifyDataSetChanged();
     }
 
     /**

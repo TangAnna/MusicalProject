@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.tang.musical.baseui.activity.BaseActivityPresenter;
-import com.tang.musical.ui.MainActivity;
+import com.tang.musical.ui.home.activity.MainActivity;
 import com.tang.musical.ui.login.delegate.SplashDelegate;
 
 /**

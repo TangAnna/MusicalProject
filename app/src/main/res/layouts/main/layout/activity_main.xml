@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.home.activity.MainActivity">
 
     <com.tang.musical.baseui.widget.CustomSmartRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,9 +20,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+            <com.tang.musical.ui.home.area.BrowseArea
+                android:id="@+id/browse_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.tang.musical.ui.home.area.AlbumsArea
+                android:id="@+id/albums_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.tang.musical.ui.home.area.MostPlayedArea
+                android:id="@+id/most_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.tang.musical.ui.home.area.AlbumsArea
+                android:id="@+id/albums_area_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y90"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_weight="1"
+                    android:src="@drawable/facebook" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y90"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_weight="1"
+                    android:src="@drawable/twitter" />
+
+
+            </LinearLayout>
         </LinearLayout>
-
-
     </com.tang.musical.baseui.widget.CustomSmartRefreshLayout>
 
 </android.support.v4.widget.NestedScrollView>

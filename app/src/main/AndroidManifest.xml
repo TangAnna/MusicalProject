@@ -35,7 +35,7 @@
 
         <!--主页-->
         <activity
-            android:name="com.tang.musical.ui.MainActivity"
+            android:name="com.tang.musical.ui.home.activity.MainActivity"
             android:screenOrientation="portrait" />
         <!--登录页面-->
         <activity
